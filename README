@@ -1,0 +1,41 @@
+Kraken Code Assessment
+This package is submitted by Kishor Ponnaganti for Kraken Code Assessment.
+
+About the package:
+This package contains 4 tests
+
+1. Get Order Book for XBTUSD:
+    Using public available market data api 'Depth', the test retrieves the Ask and Bids , validates Ask price is higher than Bids price
+2. Get Order Book for LTCUSD:
+    Using public available market data api 'Depth', the test retrieves the Ask and Bids , validates Ask price is higher than Bids price
+3. Validate Unkown Asset pair mesage
+    This test validate the error message from the api response, when the pair is not valid
+4. Using WebSocket
+    This test subscribe to Websocket public data channel for around 2 mins. It fetches trade details for XBT/USD and XRP/USD , parses the messages received and validates the timestamp is increasing over the time
+
+Solution:
+ I leveraged PyTest to run the test and Pytest-html for reporting
+
+ Setup:
+ The test rune on Python 3 and the following packages should be available
+ Requests (pip install requests)
+ Pytest (pip install pytest)
+ pytest-html (pip install pytest-html)
+ Websocket-client (pip install websocket-client)
+
+ How to run the test:
+ On Terminal Run:
+        python -m pytest --html=report.html -s --capture sys
+ from the Parent folder (krakenassessment)
+
+The report:
+    HTML Report with test execution details is
+
+About me:
+I have 20 years of experience in IT Industry, mostly working for US Financial Companies like Morgran Stanley, E*Trade , New York Life, AIG, Travelers etc.
+I have experience in functional testing of large applications including validating UI, APIs , Databases and Batch processing.
+I have experience in developing test automation tools using Java, Python, Groovy.
+
+Python is my go to language for any kind of development. I also data science enthusiast, I am working with cool datasets when I get time out side of the work.
+
+My phone number is +1-860-986-8255 and email: kishor.ponnaganti@gmail.com
